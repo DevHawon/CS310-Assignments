@@ -37,7 +37,7 @@ int main()
 	printArray(arr1, len1);
 }
 
-// 
+// print all elements in int array
 void printArray(int array[], int length)
 {
 	for(int i = 0; i < length; i++)
@@ -46,7 +46,7 @@ void printArray(int array[], int length)
 	}
 }
 
-// 
+// insertion sort for integer array
 void insertionSort(int array[], int length)
 {
 	int count = 0;
@@ -73,7 +73,7 @@ void insertionSort(int array[], int length)
 	cout << endl << count << endl;
 }
 
-// 
+// selection sort for integer array
 void selectionSort(int array[], int length)
 {
 	int count = 0;
@@ -99,7 +99,7 @@ void selectionSort(int array[], int length)
 	cout << endl << count << endl;
 }
 
-// 
+// heap Sort for integer array
 void heapSort(int array[], int length)
 {
 	int count = 0;
@@ -150,7 +150,7 @@ void heapSort(int array[], int length)
 	cout << endl << count << endl;
 }
 
-// 
+// merge Sort for integer array
 void mergeSort(int array[], int begin, int end)
 {
 	/*
@@ -183,7 +183,7 @@ void mergeSort(int array[], int begin, int end)
 	
 }
 
-// 
+// merge function is used only in mergesort function
 void merge(int array[], int left, int mid, int right)
 {
 	int lenL = mid - left + 1;
@@ -254,7 +254,7 @@ void merge(int array[], int left, int mid, int right)
  	delete[] arrayRight;
 }
 
-// 
+// quick sort for integer array
 void quickSort(int array[], int begin, int end)
 {
 	if(begin < end)
@@ -267,7 +267,7 @@ void quickSort(int array[], int begin, int end)
 	}
 }
 
-// partition function is used for quickSort function only
+// partition function is used in quickSort function only
 int partition(int array[], int begin, int end)
 {
 	// first element is the partition value
